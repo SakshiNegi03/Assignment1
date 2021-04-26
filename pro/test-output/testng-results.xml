@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-26T19:49:31 IST" name="Suite" finished-at="2021-04-26T19:49:32 IST" duration-ms="695">
+    <groups>
+    </groups>
+    <test started-at="2021-04-26T19:49:31 IST" name="Test" finished-at="2021-04-26T19:49:32 IST" duration-ms="695">
+      <class name="pro.Demo">
+        <test-method signature="integrationTest(java.util.Map)[pri:0, instance:pro.Demo@3e84448c]" started-at="2021-04-26T19:49:31 IST" name="integrationTest" data-provider="data" finished-at="2021-04-26T19:49:31 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=sakshi, DoB=dob1, Password=test}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method signature="integrationTest(java.util.Map)[pri:0, instance:pro.Demo@3e84448c]" started-at="2021-04-26T19:49:31 IST" name="integrationTest" data-provider="data" finished-at="2021-04-26T19:49:31 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=negi, DoB=dob2, Password=test123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method signature="integrationTest(java.util.Map)[pri:0, instance:pro.Demo@3e84448c]" started-at="2021-04-26T19:49:31 IST" name="integrationTest" data-provider="data" finished-at="2021-04-26T19:49:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=abc, DoB=dob3, Password=efg123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method signature="integrationTest(java.util.Map)[pri:0, instance:pro.Demo@3e84448c]" started-at="2021-04-26T19:49:31 IST" name="integrationTest" data-provider="data" finished-at="2021-04-26T19:49:32 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=mark, DoB=dob4, Password=test321}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method signature="integrationTest(java.util.Map)[pri:0, instance:pro.Demo@3e84448c]" started-at="2021-04-26T19:49:32 IST" name="integrationTest" data-provider="data" finished-at="2021-04-26T19:49:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=joe, DoB=dob5, Password=joe321}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+        <test-method signature="integrationTest(java.util.Map)[pri:0, instance:pro.Demo@3e84448c]" started-at="2021-04-26T19:49:32 IST" name="integrationTest" data-provider="data" finished-at="2021-04-26T19:49:32 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{UserName=sam, DoB=dob6, Password=sam123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- integrationTest -->
+      </class> <!-- pro.Demo -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

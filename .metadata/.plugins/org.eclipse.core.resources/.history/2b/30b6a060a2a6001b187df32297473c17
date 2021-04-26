@@ -1,0 +1,44 @@
+package test;
+
+
+
+import java.nio.file.Paths;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.Log;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+
+
+public class demo {
+	public static void main(String args[]) {
+		String cwd = Paths.get("").toAbsolutePath().toString();
+		String filePath = cwd + "/chromedriver_win32/chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", filePath);
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+		// steps to listen to chrome driver console logs
+
+		DevTools devtool = ((ChromeDriver) driver).getDevTools();
+
+		// create chrome dev tool session
+		devtool.createSession();
+
+		// enable chrome dev tools console log
+		devtool.send(Log.enable());
+		
+		//liste to chorome dev tools console log
+		devtool.addListener(Log.entryAdded(), entry -> System.out.println(entry.asSeleniumLogEntry()));
+
+		driver.get("http://omayo.blogspot.com/");
+	}
+
+}
+
